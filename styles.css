@@ -1,7 +1,7 @@
 /* General Styles */
 body {
     background-color: #f0f2f5;
-    padding-bottom: 76px;
+    padding-bottom: 120px;
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
@@ -26,7 +26,7 @@ body {
     position: relative;
     width: 100%;
     padding-bottom: 100%;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .product-image {
@@ -36,7 +36,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    padding: 10px;
+    padding: 20px;
     transition: transform 0.3s ease;
 }
 
@@ -44,11 +44,12 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
 }
 
 .product-title {
     font-size: 1.1rem;
-    margin: 12px 0;
+    margin: 20px 0;
     color: #1a202c;
     font-weight: 600;
     line-height: 1.4;
@@ -103,7 +104,7 @@ body {
 .product-card {
     background: white;
     border-radius: 20px;
-    padding: 20px;
+    padding: 25px;
     margin-bottom: 25px;
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
     position: relative;
@@ -119,8 +120,8 @@ body {
     width: 100%;
     height: 220px;
     object-fit: contain;
-    margin-bottom: 15px;
-    padding: 10px;
+    margin-bottom: 25px;
+    padding: 20px;
     transition: transform 0.3s ease;
 }
 
@@ -130,7 +131,7 @@ body {
 
 .product-card h3 {
     font-size: 1.1rem;
-    margin: 12px 0;
+    margin: 20px 0;
     color: #1a202c;
     font-weight: 600;
     line-height: 1.4;
@@ -138,16 +139,19 @@ body {
 
 /* Price Styles */
 .price {
-    margin: 15px 0;
+    margin: 12px 0; /* Reduced margin from 20px to 10px */
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0;
 }
 
 .new-price {
     color: #059669;
     font-weight: 700;
     font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.5px;
 }
 
 .old-price {
@@ -155,7 +159,11 @@ body {
     text-decoration: line-through;
     font-size: 1rem;
     opacity: 0.8;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.5px;
 }
+
 
 /* Remove Button Styles */
 .remove-btn {
@@ -168,7 +176,7 @@ body {
     cursor: pointer;
     font-weight: 600;
     transition: all 0.3s ease;
-    margin-top: auto;
+    margin-top: 10px;
 }
 
 .remove-btn:hover {
@@ -235,7 +243,7 @@ body {
     color: white;
     border-radius: 12px;
     cursor: pointer;
-    margin-top: 15px;
+    margin-top: 20px;
     font-weight: 600;
     font-size: 1rem;
     transition: all 0.3s ease;
@@ -282,6 +290,8 @@ body {
     width: 20%;
     position: relative;
     transition: all 0.3s ease;
+    padding: 8px 15px;
+    gap: 12px;
 }
 
 .navbar .nav-item::after {
@@ -309,7 +319,7 @@ body {
     font-size: 24px;
     height: 24px;
     line-height: 24px;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -326,6 +336,7 @@ body {
     display: block;
     text-align: center;
     transition: all 0.3s ease;
+    margin-top: 4px;
 }
 
 .navbar .nav-item.active span {
@@ -363,6 +374,7 @@ body {
 .list-group-item img {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin: 15px 0;
 }
 
 .btn-outline-secondary {
@@ -549,52 +561,10 @@ h1, h2 {
         background-position: -200% 0;
     }
 }
+
 .nav-item {
     text-decoration: none;
-    padding: px 10px;
-    border-radius: 10px;
-    transition: all 0.3s ease-in-out;
-    color: black;
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-/* เอฟเฟกต์ hover */
-.nav-item:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-    transform: scale(1.05);
-}
-
-/* เอฟเฟกต์ active */
-.nav-item.active {
-    background-color: #333;
-    color: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-/* Ripple effect */
-.nav-item::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.2);
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    border-radius: 50%;
-    transition: transform 0.5s ease-out;
-}
-
-.nav-item:active::after {
-    transform: translate(-50%, -50%) scale(1.5);
-}
-.nav-item {
-    text-decoration: none;
-    padding: 2px 10px;
+    padding: 8px 15px;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
     color: black;
